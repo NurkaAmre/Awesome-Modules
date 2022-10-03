@@ -1,38 +1,35 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# Awwsome books WITH Es6 modules
 
-# Project Name
-
-> Description the project.
+Javascript booklist app .. we can add books, remove books
+Create a new directory and initialize it with git.
+Use npm init -y command to create package.json file.
+Create the entry point for your JavaScript code called index.js
+Create index.css file for your styles.
+Create the main index.html file. Link your index.js and index.css files there.
+Create a directory called modules.
+Use ES6 syntax.
+Refactor your methods and functions to arrow functions.
+Divide your code into modules. Save each module in a separate file in the modules dir. Import modules in the index.js
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://nurkaamre.github.io/Awwsome-books/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
+Clone this repo using this URL (link) or download it as a ZIP format from the green button above under the text Code.
 
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
+Usage: inside the project folder looks for the index.html file and open it using your preferred web browser.
 
 ### Deployment
 
@@ -42,15 +39,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@NurkaAmre](https://github.com/NurkaAmre)
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
 ## 🤝 Contributing
 
@@ -71,5 +61,3 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
