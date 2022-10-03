@@ -21,6 +21,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
+  #list {
+    margin-bottom: 10%;
+
+  }
+
   form {
     display: flex;
     flex-direction: column;

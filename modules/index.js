@@ -1,6 +1,7 @@
 import Book from "./book.js"
 import UI from "./ui.js"
 import Store from "./store.js"
+import { DateTime } from "./luxon.js"
 
 /* Navigation selectors */
 const listNav = document.querySelector('.list');
@@ -11,6 +12,19 @@ const contactNav = document.querySelector('.contact');
 const listPage = document.querySelector('#list');
 const addPage = document.querySelector('#book-form');
 const contactPage = document.querySelector('#contact');
+
+// time selector
+const displayTime = document.getElementById('date');
+
+function refreshTime() {
+    const dateString = DateTime.now().toRFC2822();
+    displayTime.textContent = dateString;
+  }
+  
+  setInterval(refreshTime, 1000);
+
+  /* Header time */
+time.refreshTime();
 
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
