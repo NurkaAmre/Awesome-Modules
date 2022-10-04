@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome books</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h2 class="aw">Awesome books</h2>
+            <ul class="navigation-options nav-items">
+                <li><a href="#" class="list nav-item" data-id="list"</a>List</li>
+                <li><a href="#" class="new-book nav-item" data-id="book-form">Add new</a></li>
+                <li><a href="#" class="contact nav-item" data-id="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="date">
+        <p id="date"></p>
+      </div>
+    <main class="books">
+        <section id="list">
+          <h1 class="title">All Awesome Books</h1>
+          <div class="showBooks">
+          <table>
+            <tbody id="new-book"></tbody>
+          </table>
+          </div>
+          <hr>
+        </section>
+        <form id="book-form">
+          <h3 class="title">Add a new book</h3>
+          <input type="text" placeholder="Title" class="book-name" id="title" required>
+          <br>
+          <br>
+          <input type="text" placeholder="Author" class="author-name"  id="author" required>
+          <br>
+          <br>
+          <button type="submit" class="add-btn">Add</button>
+        </form>
+
+        <section id="contact">
+            <br><br>
+            <h1 class="title">Contact Information</h1>
+            <br><br>
+            <p class="title1">
+              Do you have any questions or you just want to say "Hello"? <br> You can reach out to us.
+            </p>
+            <br>
+            <ul class="contact-details">
+              <li class="footer-text">Our e-mail: mail@gmail.com</li>
+              <li class="footer-text">Our phone number: 254117923438221</li>
+              <li class="footer-text">Our address: Streetname 22 84503 City, Country</li>
+            </ul>
+          </section>
+
+    </main>
+    <script type="module" src="./modules/index.js"></script>
+</body>
+<footer>
+    <p class="footer-text">Copyright &copy;</p>
+</footer>
+</html>
