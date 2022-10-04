@@ -24,8 +24,7 @@ function refreshTime() {
 setInterval(refreshTime, 1000);
 
 /* Header time */
-let time;
-time.refreshTime();
+refreshTime();
 
 // Event: Display Books
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
