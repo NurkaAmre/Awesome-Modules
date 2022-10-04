@@ -85,7 +85,7 @@ const contactSelected = () => {
   addNav.style.color = 'black';
   contactPage.style.display = 'block';
   contactNav.style.color = 'blue';
-}
+};
 
 /* Navigation event listeners */
 listNav.addEventListener('click', listSelected);
