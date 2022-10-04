@@ -1,7 +1,7 @@
-import Book from "./book.js"
-import UI from "./ui.js"
-import Store from "./store.js"
-import { DateTime } from "./luxon.js"
+import Book from './book.js';
+import UI from './ui.js';
+import Store from './store.js';
+import { DateTime } from './luxon.js';
 
 /* Navigation selectors */
 const listNav = document.querySelector('.list');
@@ -17,13 +17,14 @@ const contactPage = document.querySelector('#contact');
 const displayTime = document.getElementById('date');
 
 function refreshTime() {
-    const dateString = DateTime.now().toRFC2822();
-    displayTime.textContent = dateString;
-  }
-  
-  setInterval(refreshTime, 1000);
+  const dateString = DateTime.now().toRFC2822();
+  displayTime.textContent = dateString;
+}
 
-  /* Header time */
+setInterval(refreshTime, 1000);
+
+/* Header time */
+let time;
 time.refreshTime();
 
 // Event: Display Books
@@ -61,34 +62,34 @@ document.querySelector('#list').addEventListener('click', (e) => {
 /* Navigation Functions */
 
 function listSelected() {
-    addPage.style.display = 'none';
-    addNav.style.color = 'black';
-    contactPage.style.display = 'none';
-    contactNav.style.color = 'black';
-    listPage.style.display = 'block';
-    listNav.style.color = 'blue';
-  }
-  
-  function addSelected() {
-    listPage.style.display = 'none';
-    listNav.style.color = 'black';
-    contactPage.style.display = 'none';
-    contactNav.style.color = 'black';
-    addPage.style.display = 'flex';
-    addNav.style.color = 'blue';
-  }
-  
-  function contactSelected() {
-    listPage.style.display = 'none';
-    listNav.style.color = 'black';
-    addPage.style.display = 'none';
-    addNav.style.color = 'black';
-    contactPage.style.display = 'block';
-    contactNav.style.color = 'blue';
-  }
-  
-  /* Navigation event listeners */
-  listNav.addEventListener('click', listSelected);
-  addNav.addEventListener('click', addSelected);
-  contactNav.addEventListener('click', contactSelected);
-  window.addEventListener('load', listSelected);
+  addPage.style.display = 'none';
+  addNav.style.color = 'black';
+  contactPage.style.display = 'none';
+  contactNav.style.color = 'black';
+  listPage.style.display = 'block';
+  listNav.style.color = 'blue';
+}
+
+function addSelected() {
+  listPage.style.display = 'none';
+  listNav.style.color = 'black';
+  contactPage.style.display = 'none';
+  contactNav.style.color = 'black';
+  addPage.style.display = 'flex';
+  addNav.style.color = 'blue';
+}
+
+function contactSelected() {
+  listPage.style.display = 'none';
+  listNav.style.color = 'black';
+  addPage.style.display = 'none';
+  addNav.style.color = 'black';
+  contactPage.style.display = 'block';
+  contactNav.style.color = 'blue';
+}
+
+/* Navigation event listeners */
+listNav.addEventListener('click', listSelected);
+addNav.addEventListener('click', addSelected);
+contactNav.addEventListener('click', contactSelected);
+window.addEventListener('load', listSelected);
