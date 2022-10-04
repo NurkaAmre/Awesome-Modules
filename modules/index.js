@@ -19,7 +19,7 @@ const displayTime = document.getElementById('date');
 const refreshTime = () => {
   const dateString = DateTime.now().toRFC2822();
   displayTime.textContent = dateString;
-}
+};
 
 setInterval(refreshTime, 1000);
 
@@ -67,7 +67,7 @@ const listSelected = () => {
   contactNav.style.color = 'black';
   listPage.style.display = 'block';
   listNav.style.color = 'blue';
-}
+};
 
 const addSelected = () => {
   listPage.style.display = 'none';
@@ -76,7 +76,7 @@ const addSelected = () => {
   contactNav.style.color = 'black';
   addPage.style.display = 'flex';
   addNav.style.color = 'blue';
-}
+};
 
 const contactSelected = () => {
   listPage.style.display = 'none';
