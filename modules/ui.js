@@ -1,13 +1,13 @@
 import Store from './store.js';
 // UI CLASS handle UI tasks
 export default class UI {
-  static displayBooks() {
+  static displayBooks = () => {
     const books = Store.getBooks();
 
     books.forEach((book) => UI.addBookToList(book));
   }
 
-  static addBookToList(book) {
+  static addBookToList = (book) => {
     const list = document.querySelector('#list');
 
     const row = document.createElement('tr');
@@ -19,7 +19,7 @@ export default class UI {
     list.appendChild(row);
   }
 
-  static deleteBook(el) {
+  static deleteBook = (el) => {
     if (el.classList.contains('delete')) {
       el.parentElement.parentElement.remove();
     }

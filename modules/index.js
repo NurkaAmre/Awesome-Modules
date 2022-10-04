@@ -16,7 +16,7 @@ const contactPage = document.querySelector('#contact');
 // time selector
 const displayTime = document.getElementById('date');
 
-function refreshTime() {
+const refreshTime = () => {
   const dateString = DateTime.now().toRFC2822();
   displayTime.textContent = dateString;
 }
@@ -60,7 +60,7 @@ document.querySelector('#list').addEventListener('click', (e) => {
 
 /* Navigation Functions */
 
-function listSelected() {
+const listSelected = () => {
   addPage.style.display = 'none';
   addNav.style.color = 'black';
   contactPage.style.display = 'none';
@@ -69,7 +69,7 @@ function listSelected() {
   listNav.style.color = 'blue';
 }
 
-function addSelected() {
+const addSelected = () => {
   listPage.style.display = 'none';
   listNav.style.color = 'black';
   contactPage.style.display = 'none';
@@ -78,7 +78,7 @@ function addSelected() {
   addNav.style.color = 'blue';
 }
 
-function contactSelected() {
+const contactSelected = () => {
   listPage.style.display = 'none';
   listNav.style.color = 'black';
   addPage.style.display = 'none';
