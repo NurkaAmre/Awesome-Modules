@@ -1,6 +1,6 @@
 # Awwsome books WITH Es6 modules
 
-Javascript booklist app .. we can add books, remove books
+This app will help you add delete books from the list! You can use with another missions too.
 Create a new directory and initialize it with git.
 Use npm init -y command to create package.json file.
 Create the entry point for your JavaScript code called index.js
@@ -31,14 +31,6 @@ To get a local copy up and running follow these simple example steps.
 Clone this repo using this URL (link) or download it as a ZIP format from the green button above under the text Code.
 
 Usage: inside the project folder looks for the index.html file and open it using your preferred web browser.
-
-### Prerequirements
-
-Have git installed. (For version control) Have text editor installed. (Preferably VSCode) Have CSS,HTML & JS Linters installed and configured. For further information, visit this link to get better understanding on each linters used on this project.
-
-### Deployment
-
-
 
 ## Authors
 
