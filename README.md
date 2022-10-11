@@ -1,16 +1,6 @@
 # Awwsome books WITH Es6 modules
 
-This app will help you add delete books from the list! You can use with another missions too.
-Create a new directory and initialize it with git.
-Use npm init -y command to create package.json file.
-Create the entry point for your JavaScript code called index.js
-Create index.css file for your styles.
-Create the main index.html file. Link your index.js and index.css files there.
-Create a directory called modules.
-Use ES6 syntax.
-Refactor your methods and functions to arrow functions.
-Divide your code into modules. Save each module in a separate file in the modules dir. Import modules in the index.js
-
+### This app will help you add delete books from the list! You can use with another missions too.
 
 ## Built With
 
